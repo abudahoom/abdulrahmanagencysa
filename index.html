@@ -56,6 +56,15 @@ h2 span{color:var(--gold)}
 .yt{display:flex;justify-content:space-between;align-items:center;gap:20px;background:linear-gradient(90deg,#3a1022,#0c1527);border:3px solid #ff3b3b;border-radius:24px;padding:28px 32px}
 .yt b{font-size:26px}
 .yt .soon{background:#ff3b3b;color:#fff;font-weight:900;padding:8px 20px;border-radius:14px;white-space:nowrap}
+nav .right{display:flex;gap:10px;align-items:center}
+.lang{cursor:pointer;font:inherit;font-weight:900;color:#0e1424;background:var(--txt);border:3px solid #090d1a;border-radius:12px;padding:5px 14px}
+.lang:hover{background:var(--gold)}
+.cta.ytb{background:#ff3b3b;color:#fff}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.ctas .cta{margin:0}
+@media(max-width:900px){.ctas{justify-content:center}}
+.yt .soon{transition:transform .15s}.yt .soon:hover{transform:translateY(-3px)}
+html[dir=ltr] .avatar .moon{left:auto;right:-20px}
 footer{border-top:2px solid var(--line);padding:28px 0;color:var(--mute);text-align:center;margin-top:40px}
 @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.hero{grid-template-columns:1fr;text-align:center}.tags{justify-content:center}.how{grid-template-columns:1fr}.yt{flex-direction:column;text-align:center}.cta.ghost{margin:12px 0 0}}
 .feat{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:640px;margin:0 auto 40px}
@@ -69,58 +78,79 @@ footer{border-top:2px solid var(--line);padding:28px 0;color:var(--mute);text-al
 <div class="stars"></div>
 <header class="wrap">
   <nav>
-    <a class="brand" href="#"><img src="img/avatar.jpg" alt="">عبدالرحمن</a>
-    <span class="pill">بالمختصر</span>
+    <a class="brand" href="#"><img src="img/avatar.jpg" alt=""><span data-en="Abdulrahman">عبدالرحمن</span></a>
+    <div class="right"><span class="pill" data-en="In Short">بالمختصر</span><button class="lang" id="lang" aria-label="Switch language">EN</button></div>
   </nav>
 </header>
 <main class="wrap">
   <section class="hero">
     <div>
-      <h1>الأخبار والاقتصاد والتقنية <span>بالمختصر</span></h1>
-      <p>مقاطع قصيرة تشرح لك السالفة في أقل من دقيقة.. بدون تعقيد، بدون وجه، بدون موسيقى.</p>
-      <div class="tags"><span>🇸🇦 السعودية</span><span>📈 اقتصاد</span><span>💻 تقنية</span><span>📰 أخبار</span></div>
-      <a class="cta" href="https://www.tiktok.com/@abdulrahmanagencysa" target="_blank" rel="noopener">تابعني على تيك توك ←</a>
-      <a class="cta ghost" href="#videos">شوف المقاطع</a>
+      <h1 data-en="News, Economy &amp; Tech <span>In Short</span>">الأخبار والاقتصاد والتقنية <span>بالمختصر</span></h1>
+      <p data-en="Short videos that explain the story in under a minute. No complexity, no face, no music.">مقاطع قصيرة تشرح لك السالفة في أقل من دقيقة.. بدون تعقيد، بدون وجه، بدون موسيقى.</p>
+      <div class="tags"><span data-en="🇸🇦 Saudi">🇸🇦 السعودية</span><span data-en="📈 Economy">📈 اقتصاد</span><span data-en="💻 Tech">💻 تقنية</span><span data-en="📰 News">📰 أخبار</span></div>
+      <div class="ctas"><a class="cta" href="https://www.tiktok.com/@abdulrahmanagencysa" target="_blank" rel="noopener" data-en="Follow on TikTok →">تابعني على تيك توك ←</a>
+      <a class="cta ytb" href="https://www.youtube.com/@abdulrahmanagencysa" target="_blank" rel="noopener" data-en="▶ YouTube">▶ يوتيوب</a>
+      <a class="cta ghost" href="#videos" data-en="Watch videos">شوف المقاطع</a></div>
     </div>
-    <div class="avatar"><div class="moon"></div><img src="img/avatar.jpg" alt="عبدالرحمن"></div>
+    <div class="avatar"><div class="moon"></div><img src="img/avatar.jpg" alt="Abdulrahman"></div>
   </section>
 
   <section class="section" id="videos">
-    <h2>آخر <span>المقاطع</span></h2>
-    <p class="sub">كل مقطع له قصة.. ومعلومة تطلع فيها.</p>
+    <h2 data-en="Latest <span>videos</span>">آخر <span>المقاطع</span></h2>
+    <p class="sub" data-en="Every video has a story, and a fact you walk away with.">كل مقطع له قصة.. ومعلومة تطلع فيها.</p>
     <div class="feat">
-      <figure><video controls playsinline preload="none" poster="img/v8.jpg" src="videos/ramadan-2030.mp4"></video><figcaption>رمضان مرتين في ٢٠٣٠</figcaption></figure>
-      <figure><video controls playsinline preload="none" poster="img/v7.jpg" src="videos/saher.mp4"></video><figcaption>كيف ساهر يصوّرك؟</figcaption></figure>
+      <figure><video controls playsinline preload="none" poster="img/v8.jpg" src="videos/ramadan-2030.mp4"></video><figcaption data-en="Two Ramadans in 2030">رمضان مرتين في ٢٠٣٠</figcaption></figure>
+      <figure><video controls playsinline preload="none" poster="img/v7.jpg" src="videos/saher.mp4"></video><figcaption data-en="How Saher catches you">كيف ساهر يصوّرك؟</figcaption></figure>
     </div>
     <div class="grid">
-      <a class="vid" href="https://www.tiktok.com/@abdulrahmanagencysa" target="_blank" rel="noopener"><img src="img/v8.jpg" alt="" loading="lazy"><div class="meta"><span class="n">#٨</span><h3>رمضان مرتين في ٢٠٣٠</h3><p>ليش بنصوم رمضان في يناير وديسمبر بنفس السنة؟ ومتى تتكرر؟</p></div></a>
-      <a class="vid" href="https://www.tiktok.com/@abdulrahmanagencysa" target="_blank" rel="noopener"><img src="img/v7.jpg" alt="" loading="lazy"><div class="meta"><span class="n">#٧</span><h3>كيف ساهر يصوّرك؟</h3><p>الرادار، قراءة اللوحات، ومركز المعلومات الوطني.. كيف تنرسل المخالفة.</p></div></a>
-      <a class="vid" href="https://www.tiktok.com/@abdulrahmanagencysa" target="_blank" rel="noopener"><img src="img/v6.jpg" alt="" loading="lazy"><div class="meta"><span class="n">#٦</span><h3>باتريوت وثاد</h3><p>كيف تتصدى السعودية للصواريخ الباليستية وصواريخ كروز والمسيّرات؟</p></div></a>
-      <a class="vid" href="https://www.tiktok.com/@abdulrahmanagencysa" target="_blank" rel="noopener"><img src="img/v5.jpg" alt="" loading="lazy"><div class="meta"><span class="n">#٥</span><h3>١١ حرف ما تشوفها على اللوحات</h3><p>اللوحات السعودية تستخدم ١٧ حرف بس من ٢٨.. وش الحروف الغايبة؟</p></div></a>
-      <a class="vid" href="https://www.tiktok.com/@abdulrahmanagencysa" target="_blank" rel="noopener"><img src="img/v4.jpg" alt="" loading="lazy"><div class="meta"><span class="n">#٤</span><h3>كيف تنصنع المقاطع المفبركة؟</h3><p>٣ أساليب معروفة لتزييف مقاطع الهجمات.. وكيف تكشفها قبل تشاركها.</p></div></a>
-      <a class="vid" href="https://www.tiktok.com/@abdulrahmanagencysa" target="_blank" rel="noopener"><img src="img/v3.jpg" alt="" loading="lazy"><div class="meta"><span class="n">#٣</span><h3>صور مفبركة لبرج الصندوق</h3><p>صور منتشرة بالذكاء الاصطناعي.. وش الحقيقي ووش المفبرك؟</p></div></a>
-      <a class="vid" href="https://www.tiktok.com/@abdulrahmanagencysa" target="_blank" rel="noopener"><img src="img/v2.jpg" alt="" loading="lazy"><div class="meta"><span class="n">#٢</span><h3>كسوة الكعبة</h3><p>كيف تنصنع كسوة الكعبة؟ معلومات بالمختصر عن واحدة من أعظم الصناعات.</p></div></a>
-      <a class="vid" href="https://www.tiktok.com/@abdulrahmanagencysa" target="_blank" rel="noopener"><img src="img/v1.jpg" alt="" loading="lazy"><div class="meta"><span class="n">#١</span><h3>سهم إنفيديا</h3><p>إيرادات قياسية.. والسهم نازل؟ وش اللي يخوّف السوق.</p></div></a>
+      <a class="vid" href="https://www.tiktok.com/@abdulrahmanagencysa/video/7711454993382952212" target="_blank" rel="noopener"><img src="img/v9.jpg" alt="" loading="lazy"><div class="meta"><span class="n" data-en="#9">#٩</span><h3 data-en="Z on a plate isn&#39;t ز">حرف Z في اللوحة.. مو زاي!</h3><p data-en="Why ح became J, ص became X and م became Z on Saudi plates.">ليش ح صارت J و ص صارت X و م صارت Z في لوحات السيارات؟</p></div></a>
+      <a class="vid" href="https://www.tiktok.com/@abdulrahmanagencysa" target="_blank" rel="noopener"><img src="img/v8.jpg" alt="" loading="lazy"><div class="meta"><span class="n" data-en="#8">#٨</span><h3 data-en="Two Ramadans in 2030">رمضان مرتين في ٢٠٣٠</h3><p data-en="Why will we fast Ramadan in both January and December of the same year? And when does it happen again?">ليش بنصوم رمضان في يناير وديسمبر بنفس السنة؟ ومتى تتكرر؟</p></div></a>
+      <a class="vid" href="https://www.tiktok.com/@abdulrahmanagencysa" target="_blank" rel="noopener"><img src="img/v7.jpg" alt="" loading="lazy"><div class="meta"><span class="n" data-en="#7">#٧</span><h3 data-en="How Saher catches you">كيف ساهر يصوّرك؟</h3><p data-en="Radar, plate reading and the National Information Center: how a ticket gets sent.">الرادار، قراءة اللوحات، ومركز المعلومات الوطني.. كيف تنرسل المخالفة.</p></div></a>
+      <a class="vid" href="https://www.tiktok.com/@abdulrahmanagencysa" target="_blank" rel="noopener"><img src="img/v6.jpg" alt="" loading="lazy"><div class="meta"><span class="n" data-en="#6">#٦</span><h3 data-en="Patriot and THAAD">باتريوت وثاد</h3><p data-en="How Saudi Arabia stops ballistic missiles, cruise missiles and drones.">كيف تتصدى السعودية للصواريخ الباليستية وصواريخ كروز والمسيّرات؟</p></div></a>
+      <a class="vid" href="https://www.tiktok.com/@abdulrahmanagencysa" target="_blank" rel="noopener"><img src="img/v5.jpg" alt="" loading="lazy"><div class="meta"><span class="n" data-en="#5">#٥</span><h3 data-en="11 letters you won&#39;t see on plates">١١ حرف ما تشوفها على اللوحات</h3><p data-en="Saudi plates use only 17 of the 28 Arabic letters. Which ones are missing?">اللوحات السعودية تستخدم ١٧ حرف بس من ٢٨.. وش الحروف الغايبة؟</p></div></a>
+      <a class="vid" href="https://www.tiktok.com/@abdulrahmanagencysa" target="_blank" rel="noopener"><img src="img/v4.jpg" alt="" loading="lazy"><div class="meta"><span class="n" data-en="#4">#٤</span><h3 data-en="How fake videos are made">كيف تنصنع المقاطع المفبركة؟</h3><p data-en="3 common ways attack videos are faked, and how to spot them before you share.">٣ أساليب معروفة لتزييف مقاطع الهجمات.. وكيف تكشفها قبل تشاركها.</p></div></a>
+      <a class="vid" href="https://www.tiktok.com/@abdulrahmanagencysa" target="_blank" rel="noopener"><img src="img/v3.jpg" alt="" loading="lazy"><div class="meta"><span class="n" data-en="#3">#٣</span><h3 data-en="Fake photos of the PIF tower">صور مفبركة لبرج الصندوق</h3><p data-en="AI images went viral. What is real and what is fake?">صور منتشرة بالذكاء الاصطناعي.. وش الحقيقي ووش المفبرك؟</p></div></a>
+      <a class="vid" href="https://www.tiktok.com/@abdulrahmanagencysa" target="_blank" rel="noopener"><img src="img/v2.jpg" alt="" loading="lazy"><div class="meta"><span class="n" data-en="#2">#٢</span><h3 data-en="The Kiswa of the Kaaba">كسوة الكعبة</h3><p data-en="How the Kaaba&#39;s cover is made, in short.">كيف تنصنع كسوة الكعبة؟ معلومات بالمختصر عن واحدة من أعظم الصناعات.</p></div></a>
+      <a class="vid" href="https://www.tiktok.com/@abdulrahmanagencysa" target="_blank" rel="noopener"><img src="img/v1.jpg" alt="" loading="lazy"><div class="meta"><span class="n" data-en="#1">#١</span><h3 data-en="Nvidia&#39;s stock">سهم إنفيديا</h3><p data-en="Record revenue, but the stock is falling? What is scaring the market.">إيرادات قياسية.. والسهم نازل؟ وش اللي يخوّف السوق.</p></div></a>
     </div>
   </section>
 
   <section class="section">
-    <h2>وش <span>تلقى</span> عندي؟</h2>
-    <p class="sub">ثلاث قواعد في كل مقطع.</p>
+    <h2 data-en="What you <span>get</span> here">وش <span>تلقى</span> عندي؟</h2>
+    <p class="sub" data-en="Three rules in every video.">ثلاث قواعد في كل مقطع.</p>
     <div class="how">
-      <div><span class="ic">⚡</span><b>بالمختصر</b>أقل من دقيقة.. وتطلع فاهم السالفة كاملة.</div>
-      <div><span class="ic">🔍</span><b>معلومة موثّقة</b>كل رقم له مصدر، والكلام غير المؤكد أقول عنه إنه غير مؤكد.</div>
-      <div><span class="ic">🎨</span><b>رسوم توضيحية</b>كل مقطع له عالمه الخاص.. عشان تفهم بعينك قبل أذنك.</div>
+      <div data-en="<span class=&quot;ic&quot;>⚡</span><b>In short</b>Under a minute, and you get the whole story."><span class="ic">⚡</span><b>بالمختصر</b>أقل من دقيقة.. وتطلع فاهم السالفة كاملة.</div>
+      <div data-en="<span class=&quot;ic&quot;>🔍</span><b>Sourced facts</b>Every number has a source, and anything unconfirmed is called unconfirmed."><span class="ic">🔍</span><b>معلومة موثّقة</b>كل رقم له مصدر، والكلام غير المؤكد أقول عنه إنه غير مؤكد.</div>
+      <div data-en="<span class=&quot;ic&quot;>🎨</span><b>Illustrated</b>Every video has its own world, so you understand with your eyes first."><span class="ic">🎨</span><b>رسوم توضيحية</b>كل مقطع له عالمه الخاص.. عشان تفهم بعينك قبل أذنك.</div>
     </div>
   </section>
 
   <section class="section">
     <div class="yt">
-      <div><b>قناة يوتيوب</b><p style="color:var(--mute)">نفس المحتوى وأكثر.. قريباً على يوتيوب.</p></div>
-      <span class="soon">قريباً</span>
+      <div><b data-en="YouTube channel">قناة يوتيوب</b><p style="color:var(--mute)" data-en="All the Shorts are on YouTube too. Subscribe so you don&#39;t miss one.">كل المقاطع موجودة على يوتيوب بعد.. اشترك عشان ما يفوتك شي.</p></div>
+      <a class="soon" href="https://www.youtube.com/@abdulrahmanagencysa" target="_blank" rel="noopener" data-en="▶ Subscribe">▶ اشترك</a>
     </div>
   </section>
 </main>
-<footer class="wrap">© ٢٠٢٦ عبدالرحمن · الأخبار والاقتصاد والتقنية بالمختصر · <a href="https://www.tiktok.com/@abdulrahmanagencysa" target="_blank" rel="noopener" style="color:var(--gold)">@abdulrahmanagencysa</a></footer>
+<footer class="wrap"><span data-en="© 2026 Abdulrahman · News, Economy &amp; Tech In Short">© ٢٠٢٦ عبدالرحمن · الأخبار والاقتصاد والتقنية بالمختصر</span> · <a href="https://www.youtube.com/@abdulrahmanagencysa" target="_blank" rel="noopener" style="color:var(--gold)">YouTube</a> · <a href="https://www.tiktok.com/@abdulrahmanagencysa" target="_blank" rel="noopener" style="color:var(--gold)">@abdulrahmanagencysa</a></footer>
+<script>
+(function(){
+  var AR_TITLE=document.title, EN_TITLE='Abdulrahman | News, Economy & Tech In Short';
+  var btn=document.getElementById('lang');
+  function setLang(l){
+    var h=document.documentElement; h.lang=l; h.dir=(l==='ar')?'rtl':'ltr';
+    document.querySelectorAll('[data-en]').forEach(function(e){
+      if(e.dataset.ar===undefined) e.dataset.ar=e.innerHTML;
+      e.innerHTML=(l==='en')?e.dataset.en:e.dataset.ar;
+    });
+    document.title=(l==='en')?EN_TITLE:AR_TITLE;
+    btn.textContent=(l==='en')?'عربي':'EN';
+    try{localStorage.setItem('lang',l)}catch(e){}
+  }
+  btn.addEventListener('click',function(){setLang(document.documentElement.lang==='ar'?'en':'ar')});
+  var saved=null; try{saved=localStorage.getItem('lang')}catch(e){}
+  if(saved==='en') setLang('en');
+})();
+</script>
 </body>
 </html>
