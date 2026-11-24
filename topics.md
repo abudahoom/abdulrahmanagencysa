@@ -14,3 +14,6 @@ One line per video: number, date, topic, angle. Add a line every time a new vide
 - #9 · 2026-11-23 · Plate letters decoded: Z = م, J = ح, X = ص, E = ع, G = ق, U = و, V = ى; ز never used; banned combos since 2009
 - #10 · 2026-11-24 · Air defense Part 2: $4M Patriot interceptor vs $20–50k Houthi drone — why it's still fired (value of the target) and cheaper layers (guns, interceptor drones, lasers ~$3/shot)
 - #11 · 2026-11-24 · Emergency alerts on your phone: Saudi National Early Warning Platform (Civil Defense), cell broadcast — no number/app/internet, rings even on silent, can't be turned off, 10.5–32.5 s tone, launched Jul 2022
+- #12 · 2026-11-24 · BlackBerry-era Arabizi: typing Arabic with English letters, numbers as letters (3=ع 7=ح 5=خ 6=ط 9=ص 2=ء 8=ق), BBM messages, "what does this mean?" comment challenge
+- #13 · 2026-11-24 · Turkey's EJDERHA ("the dragon", Aselsan) high-power electromagnetic weapon: 51 drones downed at once (15 Nov 2026 test), wired drones at ~1 km, company "world first" claim vs real-battle caution
+- #14 · 2026-11-24 · Diabetes: "always thirsty?" sign, ~1 in 4 Saudi adults (23.1%, 5.3M), 2.3M undiagnosed (IDF 2024), why thirst happens (kidneys), other signs, HbA1c test, see a doctor
