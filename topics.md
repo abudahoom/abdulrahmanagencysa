@@ -12,3 +12,4 @@ One line per video: number, date, topic, angle. Add a line every time a new vide
 - #7 · 2026-11-23 · How Saher catches you: radar, plate reading (LPR), National Information Center, new camera types
 - #8 · 2026-11-23 · Two Ramadans in 2030 (January and December) — lunar vs solar year, when it repeats
 - #9 · 2026-11-23 · Plate letters decoded: Z = م, J = ح, X = ص, E = ع, G = ق, U = و, V = ى; ز never used; banned combos since 2009
+- #10 · 2026-11-24 · Air defense Part 2: $4M Patriot interceptor vs $20–50k Houthi drone — why it's still fired (value of the target) and cheaper layers (guns, interceptor drones, lasers ~$3/shot)
